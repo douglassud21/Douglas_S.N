@@ -2,170 +2,156 @@
 <html lang="pt-br">
 <head>
 
-    <!--Meta Tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Meta Tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Links css-->
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="animate.css">
+  <!--Links CSS-->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
 
-    <!--Fonts-->
-    
+  <!--Fonts-->
 
-    <!--Title-->
-    <title>Douglas S.N</title>
+
+  <!--Title-->
+  <title>Douglas S.N</title>
 </head>
 <body>
-    
-<header class="header">
-  <div class="logo">
-    <a href="#">Douglas Nascimento</a> <!-- Logo do portfólio -->
-  </div>
-  <nav class="nav-menu">
-    <ul>
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#contact">Contato</a></li>
-      <li><a href="#blog">Estudos</a></li>
-    </ul>
-  </nav>
-</header>
+  
+  
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#home">Douglas   <span>S.N</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <div id="theme-container">
+        <button id="theme-toggle">
+          <!-- Ícone de Sol -->
+          <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M12 4a1 1 0 110-2 1 1 0 010 2zm0 18a1 1 0 110-2 1 1 0 010 2zm10-10a1 1 0 11-2 0 1 1 0 012 0zM4 12a1 1 0 11-2 0 1 1 0 012 0zm16.657-7.071a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM5.757 19.071a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zm13.9 0a1 1 0 101.414-1.414 1 1 0 00-1.414 1.414zM5.757 4.929a1 1 0 10-1.414-1.414 1 1 0 001.414 1.414zM12 8a4 4 0 100 8 4 4 0 000-8z" />
+          </svg>
+          <!-- Ícone de Lua -->
+          <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24" style="display: none;">
+            <path d="M21.73 15.91a1 1 0 00-1.05-.26 7 7 0 01-8.33-8.33 1 1 0 00-.26-1.05 1 1 0 00-1.05-.26 9 9 0 1011.18 11.18 1 1 0 00-.49-1.28z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-<main class="main">
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Bem-vindo ao meu Portfólio</h1>
-      <p class="hero-description">
-        Eu sou Douglas Nascimento, um desenvolvedor Front-End apaixonado por criar experiências digitais excepcionais. Explore meus projetos e veja como posso agregar valor ao seu time.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="btn-primary">Ver Projetos</a>
-        <a href="#contact" class="btn-secondary">Entrar em Contato</a>
+  <main>
+    <section id="home" class="home-section">
+      <div class="home-content">
+        <h1 class="main-title">Olá, sou <span class="highlighted-name">Douglas</span>!</h1>
+        <h2 class="subtitle">Front-End Developer & Designer</h2>
+        <p class="description">Com uma paixão por criar interfaces incríveis e interativas, desenvolvo soluções digitais que encantam os usuários.</p>
+        <div class="cta-container">
+          <a href="#about" class="cta-button">Saiba Mais</a>
+          <a href="#projects" class="cta-button secondary">Veja Meus Projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-text">
+          <p class="intro">Olá, eu sou <span class="highlighted-name">Douglas</span>, um desenvolvedor Front-End apaixonado por criar experiências digitais incríveis e interativas.</p>
+          <p class="bio">Tenho mais de <span class="highlighted-number">2 anos</span> de experiência no desenvolvimento de sites e aplicativos, com foco em criar interfaces modernas, funcionais e intuitivas. Sempre em busca de novas tecnologias e ferramentas que me ajudem a resolver problemas de forma criativa e eficiente.</p>
+          <p class="tech-stack">Minhas principais habilidades incluem:</p>
+          <ul class="skills-list">
+            <li>HTML5, CSS3, e JavaScript</li>
+            <li>React, Redux</li>
+            <li>Git e GitHub para controle de versão</li>
+            <li>Design Responsivo e Acessibilidade</li>
+            <li>Figma e Adobe XD para design de interfaces</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="https://via.placeholder.com/300" alt="Imagem de Douglas" class="profile-image">
+        </div>
+      </div>
+      <div class="cta-container">
+        <a href="#contact" class="cta-button primary">Entre em Contato</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="projects-content">
+        <h2 class="section-title">Meus Projetos</h2>
+        <p class="section-description">Aqui estão alguns dos meus projetos recentes, desenvolvidos com tecnologias modernas e práticas eficientes de desenvolvimento.</p>
+        
+        <div class="projects-list">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/350x200" alt="Projeto 1" class="project-image">
+            <div class="project-info">
+              <h3 class="project-title">Aplicação Web</h3>
+              <p class="project-description">Uma aplicação web interativa para gestão de tarefas, com React e integração com APIs.</p>
+              <a href="#" class="cta-button">Ver Projeto</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <img src="https://via.placeholder.com/350x200" alt="Projeto 2" class="project-image">
+            <div class="project-info">
+              <h3 class="project-title">Site Responsivo</h3>
+              <p class="project-description">Desenvolvimento de um site totalmente responsivo utilizando HTML, CSS e JavaScript.</p>
+              <a href="#" class="cta-button">Ver Projeto</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <img src="https://via.placeholder.com/350x200" alt="Projeto 3" class="project-image">
+            <div class="project-info">
+              <h3 class="project-title">Sistema de Gerenciamento</h3>
+              <p class="project-description">Sistema de gerenciamento de usuários com funcionalidades completas de CRUD usando Node.js e MongoDB.</p>
+              <a href="#" class="cta-button">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="contact-footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <h2 class="footer-title">Entre em Contato</h2>
+        <p class="footer-description">Estou sempre aberto a novas oportunidades de colaboração e projetos. Sinta-se à vontade para me contatar!</p>
+        
+        <div class="contact-info">
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:contato@meuemail.com" class="contact-link">contato@meuemail.com</a></li>
+            <li><strong>Telefone:</strong> <a href="tel:+55XXXXXXXXXXX" class="contact-link">(XX) XXXXX-XXXX</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-media">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li><a href="#" target="_blank" class="social-link">LinkedIn</a></li>
+            <li><a href="#" target="_blank" class="social-link">GitHub</a></li>
+            <li><a href="#" target="_blank" class="social-link">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-credit">
+          <p>&copy; 2025 Douglas. Todos os direitos reservados.</p>
+        </div>
       </div>
     </div>
-</section>
+  </footer>
 
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-text">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Eu sou Douglas Nascimento, um desenvolvedor Front-End apaixonado por criar experiências digitais únicas. Com uma formação sólida e uma grande curiosidade por novas tecnologias, busco sempre estar atualizado e oferecer soluções criativas para projetos de alta qualidade.</p>
-        <p>Meu foco está em criar interfaces intuitivas e responsivas, com foco na experiência do usuário e na performance. Tenho experiência com diversas ferramentas e frameworks como React, JavaScript, HTML, CSS, entre outras.</p>
-        <a href="#contact" class="btn-cta">Entrar em Contato</a>
-      </div>
-      <div class="about-image">
-        <img src="path_to_your_image.jpg" alt="Douglas Nascimento">
-      </div>
-    </div>
-  </section>
-
-  <section class="projects" id="projects">
-    <h2>Meus Projetos</h2>
-    <div class="project-cards">
-      <div class="project-card">
-        <img src="path_to_project_image1.jpg" alt="Projeto 1">
-        <div class="project-info">
-          <h3>Projeto 1</h3>
-          <p>Uma descrição curta sobre o projeto e suas tecnologias.</p>
-          <a href="link_do_projeto_1" class="btn-cta">Ver Projeto</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="path_to_project_image2.jpg" alt="Projeto 2">
-        <div class="project-info">
-          <h3>Projeto 2</h3>
-          <p>Uma descrição curta sobre o projeto e suas tecnologias.</p>
-          <a href="link_do_projeto_2" class="btn-cta">Ver Projeto</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="path_to_project_image3.jpg" alt="Projeto 3">
-        <div class="project-info">
-          <h3>Projeto 3</h3>
-          <p>Uma descrição curta sobre o projeto e suas tecnologias.</p>
-          <a href="link_do_projeto_3" class="btn-cta">Ver Projeto</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="skills" id="skills">
-    <h2>Minhas Habilidades</h2>
-    <div class="skills-container">
-      <!-- Habilidade 1 -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="path_to_icon_html.svg" alt="HTML" class="skill-icon">
-          <h3>HTML</h3>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" style="width: 90%;"></div>
-        </div>
-      </div>
-      <!-- Habilidade 2 -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="path_to_icon_css.svg" alt="CSS" class="skill-icon">
-          <h3>CSS</h3>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" style="width: 85%;"></div>
-        </div>
-      </div>
-      <!-- Habilidade 3 -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="path_to_icon_js.svg" alt="JavaScript" class="skill-icon">
-          <h3>JavaScript</h3>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" style="width: 80%;"></div>
-        </div>
-      </div>
-      <!-- Habilidade 4 -->
-      <div class="skill">
-        <div class="skill-info">
-          <img src="path_to_icon_react.svg" alt="React" class="skill-icon">
-          <h3>React</h3>
-        </div>
-        <div class="progress-bar">
-          <div class="progress" style="width: 75%;"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-section contact">
-      <h3>Entre em Contato</h3>
-      <p>Estou disponível para conversar sobre novos projetos, parcerias ou outras oportunidades!</p>
-      <form action="#" method="POST" class="contact-form">
-        <input type="text" placeholder="Seu nome" class="input" required>
-        <input type="email" placeholder="Seu e-mail" class="input" required>
-        <textarea placeholder="Sua mensagem" class="input" rows="4" required></textarea>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </div>
-    
-    <div class="footer-section social">
-      <h3>Siga-me</h3>
-      <div class="social-links">
-        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Douglas da Silva Nascimento. Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-<script src="../js/blog.js"></script>
+  <script src="../js/home.js"></script>
+  <script src="../js/theme.js"></script>
 </body>
 </html>

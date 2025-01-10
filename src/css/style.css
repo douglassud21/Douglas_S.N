@@ -6,7 +6,7 @@
     --bg-color: #FFFFFF;
     --text-color: #000000;
     --nav-text: #FFFFFF;
-    --button-bg: #FFD700;
+    --button-bg: #ffffff;
     --button-text: #000000;
     --nav-bg: #2b5876;
     /* Cor de fundo do menu */
@@ -18,9 +18,9 @@
     /* Paleta de cores para o tema Dark */
     --bg-color: #000000;
     --text-color: #FFFFFF;
-    --nav-text: #FFD700;
+    --nav-text: #f4a261;
     --button-bg: #000000;
-    --button-text: #FFD700;
+    --button-text: #f4a261;
     --nav-bg: #1b2a47;
     /* Cor de fundo do menu no tema escuro */
     --nav-hover: #f4a261;
@@ -666,11 +666,35 @@ button:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer Completo */
 .contact-footer {
     background: var(--footer-bg);
     /* Usando a variável de cor de fundo do tema */
-    color: #fff;
+    color: var(--text-color);
+    /* Cor do texto baseado no tema */
     padding: 40px 20px;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -692,7 +716,8 @@ button:hover {
 .footer-description {
     font-size: 1.1rem;
     margin-bottom: 25px;
-    color: #fff;
+    color: var(--text-color);
+    /* Cor do texto baseado no tema */
 }
 
 .contact-info ul {
@@ -703,7 +728,8 @@ button:hover {
 .contact-info li {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--text-color);
+    /* Cor do texto baseado no tema */
 }
 
 .contact-link {
@@ -718,7 +744,8 @@ button:hover {
 
 .footer-bottom {
     margin-top: 40px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--text-color);
+    /* Cor da linha de separação */
     padding-top: 20px;
 }
 
@@ -729,7 +756,8 @@ button:hover {
 .social-media h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #fff;
+    color: var(--text-color);
+    /* Cor do título baseado no tema */
 }
 
 .social-media ul {
@@ -742,7 +770,8 @@ button:hover {
 
 .social-link {
     font-size: 1.1rem;
-    color: #fff;
+    color: var(--text-color);
+    /* Cor do texto baseado no tema */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -750,24 +779,31 @@ button:hover {
 
 .social-link:hover {
     color: #f4a261;
+    /* Cor de destaque */
 }
 
 .footer-credit {
     font-size: 1rem;
     margin-top: 20px;
-    color: #fff;
+    color: var(--text-color);
+    /* Cor do texto baseado no tema */
 }
 
 /* Efeito de transição no fundo */
 [data-theme="dark"] .contact-footer {
-    background: #333333;
+    background: #1b2a47;
     /* Cor de fundo escuro */
+}
+
+[data-theme="light"] .contact-footer {
+    background: #2b5876;
+    /* Cor de fundo claro */
 }
 
 [data-theme="dark"] .footer-title,
 [data-theme="dark"] .social-link {
     color: #f4a261;
-    /* Cor da título e links no tema escuro */
+    /* Cor de destaque no tema escuro */
 }
 
 [data-theme="dark"] .footer-description,

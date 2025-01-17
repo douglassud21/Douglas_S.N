@@ -1,5 +1,6 @@
 
 
+/* Estilos do Header */
 header {
     background: #333;
     color: #fff;
@@ -8,18 +9,35 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
+    transition: background 0.3s, color 0.3s;
+    /* Transição para a mudança de cores */
+}
+
+header.dark-mode {
+    background: #fff;
+    color: #333;
 }
 
 .logo a {
     text-decoration: none;
     font-size: 1.5rem;
     color: #fff;
+    transition: color 0.3s;
+}
+
+header.dark-mode .logo a {
+    color: #333;
 }
 
 .logo span {
     color: #f39c12;
 }
 
+header.dark-mode .logo span {
+    color: #f39c12;
+}
+
+/* Estilos do Menu */
 nav {
     display: flex;
     align-items: center;
@@ -41,10 +59,19 @@ nav {
     transition: color 0.3s;
 }
 
+nav.dark-mode .nav-links a {
+    color: #333;
+}
+
+nav.dark-mode .nav-links a:hover {
+    color: #f39c12;
+}
+
 .nav-links a:hover {
     color: #f39c12;
 }
 
+/* Estilos para a troca de tema */
 #theme-container {
     display: flex;
     align-items: center;
@@ -60,6 +87,7 @@ svg:hover {
     transform: scale(1.2);
 }
 
+/* Menu responsivo */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -92,6 +120,32 @@ svg:hover {
     .menu-toggle {
         display: flex;
     }
+}
+
+/* Modo escuro (Dark mode) */
+header.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header.dark-mode .nav-links a {
+    color: #fff;
+}
+
+header.dark-mode .nav-links a:hover {
+    color: #f39c12;
+}
+
+header.dark-mode svg {
+    fill: #fff;
+}
+
+header.dark-mode #sun-icon {
+    display: none;
+}
+
+header.dark-mode #moon-icon {
+    display: block;
 }
 
 

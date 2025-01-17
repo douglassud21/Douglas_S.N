@@ -1,40 +1,65 @@
 
+:root {
+    /* Paleta Light */
+    --primary-light: #ffffff;
+    --secondary-light: #f0f0f0;
+    --background-light: #fafafa;
+    --text-light: #333333;
+    --link-light: #0066cc;
+
+    /* Paleta Dark */
+    --primary-dark: #121212;
+    --secondary-dark: #1f1f1f;
+    --background-dark: #181818;
+    --text-dark: #eaeaea;
+    --link-dark: #66aaff;
+}
+
+body {
+    background: var(--background-light);
+    color: var(--text-light);
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: var(--background-dark);
+    color: var(--text-dark);
+}
 
 /* Estilos do Header */
 header {
-    background: #333;
-    color: #fff;
+    background: var(--background-dark);
+    color: var(--text-light);
     padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
     transition: background 0.3s, color 0.3s;
-    /* Transição para a mudança de cores */
 }
 
-header.dark-mode {
-    background: #fff;
-    color: #333;
+body.dark-mode header {
+    background: var(--background-light);
+    color: var(--text-dark);
 }
 
 .logo a {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--text-light);
     transition: color 0.3s;
 }
 
-header.dark-mode .logo a {
-    color: #333;
+body.dark-mode .logo a {
+    color: var(--text-dark);
 }
 
 .logo span {
-    color: #f39c12;
+    color: var(--link-light);
 }
 
-header.dark-mode .logo span {
-    color: #f39c12;
+body.dark-mode .logo span {
+    color: var(--link-dark);
 }
 
 /* Estilos do Menu */
@@ -55,20 +80,20 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-light);
     transition: color 0.3s;
 }
 
-nav.dark-mode .nav-links a {
-    color: #333;
+body.dark-mode .nav-links a {
+    color: var(--text-dark);
 }
 
-nav.dark-mode .nav-links a:hover {
-    color: #f39c12;
+body.dark-mode .nav-links a:hover {
+    color: var(--link-dark);
 }
 
 .nav-links a:hover {
-    color: #f39c12;
+    color: var(--link-light);
 }
 
 /* Estilos para a troca de tema */
@@ -95,7 +120,7 @@ svg:hover {
 }
 
 .menu-toggle span {
-    background: #fff;
+    background: var(--text-light);
     height: 3px;
     width: 25px;
     margin: 4px 0;
@@ -108,7 +133,7 @@ svg:hover {
         position: absolute;
         top: 60px;
         right: 20px;
-        background: #333;
+        background: var(--background-dark);
         padding: 20px;
         border-radius: 10px;
     }
@@ -122,31 +147,33 @@ svg:hover {
     }
 }
 
-/* Modo escuro (Dark mode) */
-header.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
 
-header.dark-mode .nav-links a {
-    color: #fff;
-}
 
-header.dark-mode .nav-links a:hover {
-    color: #f39c12;
-}
 
-header.dark-mode svg {
-    fill: #fff;
-}
 
-header.dark-mode #sun-icon {
-    display: none;
-}
 
-header.dark-mode #moon-icon {
-    display: block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
